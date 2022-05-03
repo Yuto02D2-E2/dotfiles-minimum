@@ -1,0 +1,15 @@
+# ホワイトリスト形式
+
+# 一旦全てを追跡対象から除外
+*
+
+# 以降のファイルを追跡する
+!.bash_aliases
+!.bash_profile
+!.bashrc
+!.gitconfig
+!.gitignore
+!.inputrc
+!.vimrc
+!config.sh
+!README.md

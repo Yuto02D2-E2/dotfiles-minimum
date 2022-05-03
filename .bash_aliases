@@ -1,0 +1,5 @@
+alias vi="vim"
+alias python="python3"
+alias l="ls -CF"
+alias ll="ls -alF"
+alias init="source $HOME/.bash_profile"

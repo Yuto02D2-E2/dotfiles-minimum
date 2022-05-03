@@ -1,0 +1,29 @@
+[user]
+    name = Yuto02D2-E2
+    email = d.yuto.k.b@gmail.com
+
+[init]
+    defaultBranch = main
+
+[color]
+    ui = true
+
+[pull]
+    ff = only
+
+[core]
+    autocrlf = false
+    ignorecase = false
+    editor = vi
+    quotepath = false
+    symlinks = true
+
+[alias]
+    st = status
+
+[gui]
+    encoding = utf-8
+    tabsize = 4
+
+[credential]
+    helper "cache --timeout=86400"
