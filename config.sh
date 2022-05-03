@@ -52,6 +52,7 @@ function make_symbolic_link() {
     do
         # ignore
         [[ "$file_name" = ".git" ]] && continue
+        [[ "$file_name" = ".gitignore" ]] && continue
         # backup
         if [ -e "$HOME/$file_name" ]; then
             cp -r "$HOME/$file_name" "$DOTFILE_DIR/backup/$file_name.backup"
