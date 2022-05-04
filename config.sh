@@ -65,7 +65,6 @@ function make_symbolic_link() {
 
 
 function init() {
-    logo
     echo -e "\n> initialize dotfiles\n"
 
     sudo apt update && sudo apt upgrade -y
@@ -98,7 +97,6 @@ function init() {
 
 
 function update() {
-    logo
     echo -e "\n> update dotfiles\n"
 
     make_symbolic_link
@@ -110,19 +108,22 @@ function update() {
 
 
 # --------------------------- entry point ---------------------------------
-if [ $# -ne 1 ]; then
-    colorPrint "red" "error : missing argument\n"
-    colorPrint "red" "Usage:\n"
-    colorPrint "red" "\t$ sh config.sh [init | update]\n"
-    exit 0
-fi
-if [ "$1" = "init" ]; then
-    init
-elif [ "$1" = "update" ]; then
-    update
-else
-    colorPrint "red" "error : invalid argument\n"
-    colorPrint "red" "Usage:\n"
-    colorPrint "red" "\t$ sh config.sh [init | update]\n"
-    exit 0
-fi
+logo
+while true
+do
+    read -p "> select mode [init | update | exit]:" mode
+    if [ "$mode" = "init" ]; then
+        init
+        break
+    elif [ "$mode" = "update" ]; then
+        update
+        break
+    elif [ "$mode" = "exit" ]; then
+        echo -e "> ok. exit script"
+        break
+    else
+        colorPrint "red" "> error : invalid argument\n"
+        colorPrint "red" "> please enter either \"init\" or \"update\"\n"
+        continue
+    fi
+done
