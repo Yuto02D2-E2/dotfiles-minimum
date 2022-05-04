@@ -1,5 +1,7 @@
-call plug#begin("~/vimfiles/plugged") " ref: https://github.com/junegunn/vim-plug#unix
-Plug 'itchyny/lightline.vim' " ref: https://github.com/itchyny/lightline.vim#vim-plug
+call plug#begin("~/vimfiles/plugged")
+" ref: https://github.com/junegunn/vim-plug#unix
+Plug 'itchyny/lightline.vim'
+" ref: https://github.com/itchyny/lightline.vim#vim-plug
 call plug#end()
 
 set fileformats=unix,dos,mac

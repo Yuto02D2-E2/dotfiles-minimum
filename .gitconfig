@@ -25,5 +25,3 @@
     encoding = utf-8
     tabsize = 4
 
-[credential]
-    helper "cache --timeout=86400"
