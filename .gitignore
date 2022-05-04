@@ -11,5 +11,6 @@
 !.gitignore
 !.inputrc
 !.vimrc
+!init.sh
 !config.sh
 !README.md
