@@ -39,6 +39,7 @@ function logo() {
     colorPrint "green" "|                                                           |\n"
     colorPrint "green" "|                                                Yuto02D2   |\n"
     colorPrint "green" "=============================================================\n"
+    echo -e "\n"
 }
 
 
