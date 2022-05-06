@@ -66,6 +66,8 @@ set wrapscan
 " silent: not display command
 inoremap <silent> jj <Esc>
 nnoremap <Esc><Esc> :nohlsearch<Enter><Esc>
+nnoremap <silent> j gj
+nnoremap <silent> k gk
 nnoremap n nzz
 nnoremap N Nzz
 " using leader key
